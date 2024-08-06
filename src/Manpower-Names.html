@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manpower-Names</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        button.print {
+            background-color: #008CBA;
+        }
+        button.whatsapp {
+            background-color: #25D366;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="current-time"></div>
+        <div class="button-container">
+            <button class="print" onclick="window.print()">Print</button>
+            <button class="whatsapp" onclick="sendWhatsApp()">Send via WhatsApp</button>
+        </div>
+    </header>
+
+    <h2>Manpower Report</h2>
+    <img src="1.jpg" alt="Manpower Report">
+
+    <h2>Manpower Report</h2>
+    <img src="2.jpg" alt="Manpower Report">
+
+
+    <h2>Manpower Report</h2>
+    <img src="3.jpg" alt="Manpower Report">
+    <script>
+        // Function to update current time and date
+        function updateTime() {
+            const now = new Date();
+            const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+            };
+            document.getElementById('current-time').innerText = now.toLocaleDateString('en-US', options);
+        }
+        
+        // Update time every second
+        setInterval(updateTime, 1000);
+        updateTime();
+
+        // Function to send the image via WhatsApp
+        function sendWhatsApp() {
+            const url = "https://wa.me/?text=" + encodeURIComponent("Check out this report") + " " + window.location.href;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
