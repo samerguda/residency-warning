@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/residency-warning/static/css/main.f29ea540.css",
+    "main.js": "/residency-warning/static/js/main.be957b84.js",
+    "static/js/453.cf763c8c.chunk.js": "/residency-warning/static/js/453.cf763c8c.chunk.js",
+    "index.html": "/residency-warning/index.html",
+    "main.f29ea540.css.map": "/residency-warning/static/css/main.f29ea540.css.map",
+    "main.be957b84.js.map": "/residency-warning/static/js/main.be957b84.js.map",
+    "453.cf763c8c.chunk.js.map": "/residency-warning/static/js/453.cf763c8c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f29ea540.css",
+    "static/js/main.be957b84.js"
+  ]
+}
